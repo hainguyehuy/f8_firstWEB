@@ -1,0 +1,146 @@
+/*reset css */
+*{
+    /*emmet */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* QUY TẮC */
+/*
+1. từ ngoài vào trong
+2. từ trên xuống dưới
+3. tổng quan đến chi tiết
+*/
+/* 
+1. vị trí
+2. kích thước
+3. màu sắc
+4. kiểu dáng ( kiểu chữ , hình tròn, vuông ...)
+
+*/
+#main{
+
+}
+
+#header{
+     height: 50px;
+     background-color: #000;
+     position: fixed;   
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 1;
+}
+/* begin nav */
+#nav {
+    display: inline-block;
+}
+#nav .subnav {
+    list-style-type: none;
+}
+#nav >li {
+    display: inline-block;
+}
+#nav li{
+    
+    position: relative;
+}
+#nav >  li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav li a{
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 24px ;
+    display: inline-block;
+}
+#nav .subnav li:hover ,
+#nav > li:hover > a {
+    color : #000;
+    background-color: #ccc;
+} 
+
+#nav .subnav {  
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow:0 0 10px rgba(0,0,0,2)  ;
+    
+}
+#nav .subnav  a  {
+    color: #000;
+    padding: 0 15px;
+}
+#nav .nav-arrow-down {
+    font-size: 15px;
+}
+/* end nav */
+/* ************************************** */
+/* begin search */
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+    
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+}
+/* end search */
+#slider{
+    position: relative;
+   margin-top: 50px;
+   padding-top: 50%;
+   background-image: url('/f8_the_band/assets/img/slider1.jpg') ;
+   background-position: top center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    /* left: 50%;
+    transform: translateX(-50%); c1 */
+    width: 100%; 
+    /* right: 0;
+    left: 0; c3*/
+    /* 3 cách căn giữa chữ */
+    text-align: center;
+    
+}
+
+#slider .text-heading {
+    font-weight: 600;
+    
+
+}
+
+#slider .text-description {
+    font-size: 16px;
+    margin-top: 25px;
+}
+#footer{
+
+}
+
+#content{
+    height: 2000px;
+}
+
